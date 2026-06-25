@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sami Ftaita — Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer based in Morocco, building fast and scalable web applications." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <header class="nav" id="header">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-mark">SF</span>
+      </a>
+
+      <!-- Pill nav — center -->
+      <nav class="nav-pill" id="navbar">
+        <a href="#home" class="nav-pill-link active">Home</a>
+        <a href="#about" class="nav-pill-link">About</a>
+        <a href="#skills" class="nav-pill-link">Skills</a>
+        <a href="#projects" class="nav-pill-link">Work</a>
+        <div class="nav-pill-indicator" id="nav-indicator"></div>
+      </nav>
+
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta">
+          Let's talk <i class="bx bx-arrow-back bx-rotate-180"></i>
+        </a>
+
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="bx bx-moon" id="theme-icon"></i>
+        </button>
+
+        <button class="nav-burger" id="menu-icon" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Mobile dropdown -->
+      <nav class="nav-mobile" id="nav-mobile">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Let's talk</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-noise" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Open to opportunities
+        </div>
+
+        <h1 class="hero-title">
+          Full Stack<br />
+          <span class="hero-title-em">Developer.</span>
+        </h1>
+
+        <p class="hero-sub">
+          I'm <strong>Sami Ftaita</strong>, a developer based in Morocco.<br />
+          I build performant, accessible web apps from front to back.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-solid">View my work</a>
+          <a href="#contact" class="btn-outline">Get in touch</a>
+          <a href="cv-sami-ftaita.pdf" download="CV-Sami-Ftaita.pdf" class="btn-download">
+            <i class="bx bx-download"></i> Download CV
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/samiftaita" target="_blank" rel="noopener">
+            <i class="bx bxl-github"></i> GitHub
+          </a>
+          <span class="hero-divider">·</span>
+          <a href="https://www.linkedin.com/in/sami-ftaita-2a6311369" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i> LinkedIn
+          </a>
+          <span class="hero-divider">·</span>
+          <a href="mailto:ftaitasami@gmail.com">
+            <i class="bx bx-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-window-bar">
+            <span class="cwb-dot cwb-red"></span>
+            <span class="cwb-dot cwb-yellow"></span>
+            <span class="cwb-dot cwb-green"></span>
+            <span class="cwb-title">sami.config.js</span>
+          </div>
+          <div class="code-body">
+            <pre class="code-block"><code><span class="ct-kw">const</span> <span class="ct-var">developer</span> <span class="ct-op">=</span> <span class="ct-brace">{</span>
+  <span class="ct-key">name</span><span class="ct-op">:</span>     <span class="ct-str">"Sami Ftaita"</span><span class="ct-op">,</span>
+  <span class="ct-key">role</span><span class="ct-op">:</span>     <span class="ct-str">"Full Stack Developer"</span><span class="ct-op">,</span>
+  <span class="ct-key">location</span><span class="ct-op">:</span> <span class="ct-str">"Morocco 🇲🇦"</span><span class="ct-op">,</span>
+  <span class="ct-key">stack</span><span class="ct-op">:</span>    <span class="ct-brace">[</span>
+    <span class="ct-str">"React"</span><span class="ct-op">,</span> <span class="ct-str">"Node.js"</span><span class="ct-op">,</span>
+    <span class="ct-str">"PHP"</span><span class="ct-op">,</span>   <span class="ct-str">"Laravel"</span><span class="ct-op">,</span>
+    <span class="ct-str">"MySQL"</span><span class="ct-op">,</span> <span class="ct-str">"Python"</span>
+  <span class="ct-brace">]</span><span class="ct-op">,</span>
+  <span class="ct-key">available</span><span class="ct-op">:</span> <span class="ct-bool">true</span><span class="ct-op">,</span>
+  <span class="ct-key">projects</span><span class="ct-op">:</span>  <span class="ct-num">10</span><span class="ct-op">,</span>
+  <span class="ct-key">experience</span><span class="ct-op">:</span> <span class="ct-str">"2+ years"</span>
+<span class="ct-brace">}</span><span class="ct-op">;</span>
+
+<span class="ct-kw">export default</span> <span class="ct-var">developer</span><span class="ct-op">;</span></code></pre>
+          </div>
+          <div class="code-footer">
+            <span class="cf-dot"></span>
+            <span class="cf-text" id="typewriter-line"></span>
+            <span class="cf-cursor">▋</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="label">About me</p>
+          <h2>I turn ideas into<br /><em>real products.</em></h2>
+        </div>
+        <div class="about-right">
+          <p>
+            I'm a full-stack developer with 2+ years of hands-on experience building web applications. I care about clean code, fast performance, and interfaces people actually enjoy using.
+          </p>
+          <p>
+            My stack covers the full spectrum — from building responsive UIs with React to designing REST APIs with Node.js and Laravel, backed by MySQL databases.
+          </p>
+          <a href="#contact" class="btn-solid">Work with me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="skills-inner">
+
+        <div class="skills-header">
+          <p class="label">Tech stack</p>
+          <h2>What I <em>build with</em></h2>
+        </div>
+
+        <div class="skills-categories">
+
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <span class="skill-group-icon"><i class="bx bx-layout"></i></span>
+              <span class="skill-group-title">Frontend</span>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip">
+                <i class="bx bxl-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-css3"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-javascript"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-react"></i>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <span class="skill-group-icon"><i class="bx bx-server"></i></span>
+              <span class="skill-group-title">Backend</span>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip">
+                <i class="bx bxl-nodejs"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bx-code-alt"></i>
+                <span>Laravel</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-python"></i>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <span class="skill-group-icon"><i class="bx bx-data"></i></span>
+              <span class="skill-group-title">Database &amp; Tools</span>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip">
+                <i class="bx bx-data"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bx-leaf"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-docker"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-git"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bxl-gitlab"></i>
+                <span>GitLab</span>
+              </div>
+              <div class="skill-chip">
+                <i class="bx bx-task"></i>
+                <span>Jira / Scrum</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="work" id="projects">
+      <div class="work-inner">
+
+        <div class="work-header">
+          <div>
+            <p class="label">Selected work</p>
+            <h2>Projects I've <em>built</em></h2>
+          </div>
+          <a href="https://github.com/samiftaita" target="_blank" rel="noopener" class="btn-outline work-gh-btn">
+            <i class="bx bxl-github"></i> GitHub
+          </a>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="wcard">
+            <div class="wcard-top">
+              <div class="wcard-top-left">
+                <span class="wcard-num">01</span>
+                <span class="wcard-type">Web Application</span>
+              </div>
+              <a href="https://github.com/samiftaita/SITE-WEB-E-COMMERCE"
+                 target="_blank" rel="noopener"
+                 class="wcard-icon-btn" aria-label="View on GitHub">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+
+            <div class="wcard-preview">
+              <img src="images/proj1.PNG" alt="E-Commerce Platform" loading="lazy" />
+            </div>
+
+            <div class="wcard-body">
+              <h3 class="wcard-title">E-Commerce Platform</h3>
+              <p class="wcard-desc">Full-featured online store — product catalog, cart system, and admin dashboard built with PHP &amp; MySQL.</p>
+              <div class="wcard-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+              </div>
+            </div>
+
+            <a href="https://github.com/samiftaita/SITE-WEB-E-COMMERCE"
+               target="_blank" rel="noopener"
+               class="wcard-cta">
+              View project <i class="bx bx-arrow-back bx-rotate-180"></i>
+            </a>
+          </article>
+
+          <article class="wcard">
+            <div class="wcard-top">
+              <div class="wcard-top-left">
+                <span class="wcard-num">02</span>
+                <span class="wcard-type">Desktop Application</span>
+              </div>
+              <a href="https://github.com/samiftaita/Interface-Python"
+                 target="_blank" rel="noopener"
+                 class="wcard-icon-btn" aria-label="View on GitHub">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+
+            <div class="wcard-preview">
+              <img src="images/tikenter.jpg" alt="Python Desktop App" loading="lazy" />
+            </div>
+
+            <div class="wcard-body">
+              <h3 class="wcard-title">Python Desktop App</h3>
+              <p class="wcard-desc">Desktop management application built with Python &amp; Tkinter. Lightweight JSON-based data persistence.</p>
+              <div class="wcard-tags">
+                <span>Python</span>
+                <span>Tkinter</span>
+                <span>JSON</span>
+              </div>
+            </div>
+
+            <a href="https://github.com/samiftaita/Interface-Python"
+               target="_blank" rel="noopener"
+               class="wcard-cta">
+              View project <i class="bx bx-arrow-back bx-rotate-180"></i>
+            </a>
+          </article>
+
+          <article class="wcard">
+            <div class="wcard-top">
+              <div class="wcard-top-left">
+                <span class="wcard-num">03</span>
+                <span class="wcard-type">PFE · Web Platform</span>
+              </div>
+              <a href="https://dentora-dental.vercel.app/" target="_blank" rel="noopener"
+                 class="wcard-icon-btn" aria-label="Visit live site">
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+
+            <div class="wcard-preview">
+              <img src="images/img.JPG" alt="Dentora — Dental Management Platform" loading="lazy" />
+            </div>
+
+            <div class="wcard-body">
+              <h3 class="wcard-title">Dentora</h3>
+              <p class="wcard-desc">Full-stack platform to digitalize dental clinics — patients, appointments, schedules, medical records, and an AI assistant <strong>DentoraBot</strong>.</p>
+              <div class="wcard-tags">
+                <span>React</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Tailwind</span>
+                
+              </div>
+            </div>
+
+            <a href="https://dentora-dental.vercel.app/" target="_blank" rel="noopener" class="wcard-cta">
+              Visit site <i class="bx bx-arrow-back bx-rotate-180"></i>
+            </a>
+          </article>
+
+          <!-- Sportiba -->
+          <article class="wcard">
+            <div class="wcard-top">
+              <div class="wcard-top-left">
+                <span class="wcard-num">04</span>
+                <span class="wcard-type">Web Platform</span>
+              </div>
+              <a href="https://sportiba.com/" target="_blank" rel="noopener"
+                 class="wcard-icon-btn" aria-label="Visit live site">
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+
+            <div class="wcard-preview">
+              <img src="images/sport.JPG" alt="Sportiba — CAN 2025 Predictions Platform" loading="lazy" />
+            </div>
+
+            <div class="wcard-body">
+              <h3 class="wcard-title">Sportiba</h3>
+              <p class="wcard-desc">Interactive web platform dedicated to Africa Cup of Nations 2025 predictions — team analysis, match tracking, and community forecasts.</p>
+              <div class="wcard-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+
+            <a href="https://sportiba.com/" target="_blank" rel="noopener" class="wcard-cta">
+              Visit site <i class="bx bx-arrow-back bx-rotate-180"></i>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <p class="label">Contact</p>
+        <h2>Let's build something<br /><em>together.</em></h2>
+        <p class="contact-sub">Have a project in mind or want to discuss an opportunity? My inbox is open.</p>
+
+        <a href="mailto:ftaitasami@gmail.com" class="contact-email">
+          ftaitasami@gmail.com
+          <i class="bx bx-arrow-back bx-rotate-180"></i>
+        </a>
+
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/sami-ftaita-2a6311369" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/samiftaita" target="_blank" rel="noopener">
+            <i class="bx bxl-github"></i> GitHub
+          </a>
+          <a href="tel:+212601440153">
+            <i class="bx bx-phone"></i> +212 601 440 153
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>© 2025 Sami Ftaita</span>
+      <span>Built with HTML · CSS · JS</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
